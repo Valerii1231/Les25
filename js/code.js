@@ -52,7 +52,7 @@ Object.defineProperty(salaries, 'arrToOb', {
     let str = arrSalaries.join(' ');
     let arr = str.split(' ');
     salaries = {};
-    for (let i = 0; i < arr.length - 1; i += 2) {
+    for (let i = 0; i < arr.length; i += 2) {
         salaries[arr[i]] = arr[i + 1];   
     }
     console.log(salaries);
